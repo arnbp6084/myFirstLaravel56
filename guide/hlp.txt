@@ -1,0 +1,18 @@
+@foreach($order->orderdetail->products as $product)
+		    <ul>
+		    	<li>Product code: {{ $product->product_code }}</li>
+		    	<li>Product name: {{ $product->product_name }}</li>
+		    	<li>Product price: {{ $product->price }}</li>
+		    </ul>
+	    @endforeach
+
+
+print '<pre>';
+print_r($customer);
+print '</pre>';
+
+<ul>
+	    	<li>Product code: {{ $order->orderdetail->products->product_code }}</li>
+	    	<li>Product name: {{ $order->orderdetail->products->product_name }}</li>
+	    	<li>Product price: {{ $order->orderdetail->products->price }}</li>
+	    </ul>

@@ -1,0 +1,4 @@
+$brand = new Larashop\Models\Brand;
+$brand->name = "Chanel1";
+$brand->description = "It is pronounced as Shanel1";
+$brand->save();
